@@ -2,10 +2,10 @@
   "modules" : { 
     "plex"  : {
       "description": "Plioter plex",
-      "version"    : "0.1",
-      "server"     : "192.168.0.11",
-    	"client"     : "loki",
-      "Sectionserie" : "3",
+      "version"    : "0.2",
+      "server"     : "[IP du SERVEUR]",
+    	"client"     : "[Ip du client]",
+      "Sectionserie" : "[N° de section série]",
       "lastAddTime" :"1"
     }
   }

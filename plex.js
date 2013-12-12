@@ -4,7 +4,7 @@ exports.action = function(data, callback, config, SARAH){
   if (!config.server){ 
     console.log("Missing Plex server config");
     callback({'tts' : 'Il manque la configuration du serveur plex'});
-    return;    
+    return;     
   }     
   if (!config.client){ 
     console.log("Missing client config");
@@ -33,7 +33,6 @@ exports.action = function(data, callback, config, SARAH){
   }
  
 }
-
 
 var playback = function(action, callback, config) {
   commande = 'system/players/'+config.client+'/playback/'+action;
@@ -145,7 +144,6 @@ var getPlex = function(commande, config, callback){
 
 
 var output = function ( callback, output ) {
-	//console.log('ACTION: ' + output);
+	console.log('ACTION: ' + output);
 	callback({ 'tts' : output});
 }
- 
